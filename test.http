@@ -1,0 +1,38 @@
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Prince",
+  "email": "prince@gmail.com",
+  "password": "123456",
+  "role": "admin"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "prince@gmail.com",
+  "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/projectRoutes/create
+Content-Type: application/json
+
+{
+  "title": "Task Manager",
+  "description": "Assessment Project",
+  "members": []
+}
+
+###
+POST http://localhost:5000/api/tasks/create
+Content-Type: application/json
+
+{
+  "title": "Build Backend",
+  "description": "Complete task API",
+  "dueDate": "2026-06-01"
+}
